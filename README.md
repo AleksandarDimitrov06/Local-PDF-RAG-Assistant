@@ -1,6 +1,13 @@
 # Local RAG pdf assistant on Low-VRAM GPUs 🚀
 A Retrieval-Augmented Generation (RAG) application built entirely with open-source tools, designed to run 100% locally on consumer hardware with limited VRAM.
 
+## How It Works
+1. **Upload** a PDF file through the Streamlit interface
+2. **Chunking** — the PDF is split into smaller overlapping text chunks
+3. **Embedding** — each chunk is converted into a vector using `sentence-transformers/all-MiniLM-L6-v2`
+4. **Retrieval** — when you ask a question, the most relevant chunks are retrieved from the in-memory vector store
+5. **Generation** — the retrieved chunks are passed as context to `Qwen2.5-3B-Instruct`, which generates a precise answer
+
 ## Features
 - **Privacy First:** No data is sent to external APIs like OpenAI or Groq. Everything runs locally.
 - **Low VRAM Optimized:** Uses `bitsandbytes` 4-bit quantization to fit a Large Language Model into less than 4GB of VRAM.
@@ -50,3 +57,6 @@ A Retrieval-Augmented Generation (RAG) application built entirely with open-sour
 - **PyPDFLoader** — reads and parses PDF pages into LangChain documents
 ### Architecture
 - **RAG (Retrieval-Augmented Generation)** — in-memory vector store (no persistent DB), local inference (no external API calls)
+
+
+> **BONUS:** I have added several PDF files inside the `data` folder for testing the application.
