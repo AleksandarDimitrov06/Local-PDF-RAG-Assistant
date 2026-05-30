@@ -8,10 +8,9 @@ A Retrieval-Augmented Generation (RAG) application built entirely with open-sour
 
 ## Hardware Requirements
 - NVIDIA GPU with at least 4GB VRAM 
-   >**Note:**Without a GPU it will fall back to CPU — functional but very slow (5–15 min/query)
 - 8GB+ System RAM
 - 5-6 GB free storage space for model weights and cache on first download
-
+> **Note:** Without a GPU it will fall back to CPU — functional but very slow (5–15 min/query)
 
 ## Installation
 1. **Clone the repository:**
