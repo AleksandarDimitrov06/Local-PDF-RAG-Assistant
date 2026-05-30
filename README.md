@@ -15,12 +15,18 @@ A Retrieval-Augmented Generation (RAG) application built entirely with open-sour
 ## Installation
 1. **Clone the repository:**
 2. **Create a virtual environment (recommended but not essential)**
+```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
 3. **Install dependencies:**
+```bash
    pip install -r requirements.txt
+```
 4. **Run the model**
-    streamlit run app.py
+```bash
+   streamlit run app.py
+```
 
 > **Note:** Initial startup may take a moment depending on your hardware, as the model loads into memory on first launch.
 
