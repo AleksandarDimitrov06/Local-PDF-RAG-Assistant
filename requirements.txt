@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain-huggingface
+sentence-transformers
+pypdf
+transformers
+accelerate
+bitsandbytes
+langchain-text-splitters
+langchain_community
+streamlit
