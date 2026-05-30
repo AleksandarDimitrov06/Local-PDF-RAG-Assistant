@@ -36,12 +36,11 @@ if pdf_file is not None:
     question = st.chat_input("Ask a question about the PDF...")
 
     if question:
-        # Show user message
+        
         st.session_state.messages.append({"role": "user", "content": question})
         with st.chat_message("user"):
             st.write(question)
 
-        # Generate and show assistant response
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
                 response = AskQuestion(st.session_state.rag_chain, question)

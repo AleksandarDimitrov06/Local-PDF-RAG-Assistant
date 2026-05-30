@@ -40,7 +40,7 @@ def load_llm_and_embeddings():
 
     llm = HuggingFacePipeline(pipeline=pipe)
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    return llm, embeddings, tokenizer  # ← also return tokenizer
+    return llm, embeddings, tokenizer
 
 
 llm, embeddings, tokenizer = load_llm_and_embeddings()
