@@ -2,7 +2,7 @@
 A Retrieval-Augmented Generation (RAG) application built entirely with open-source tools, designed to run 100% locally on consumer hardware with limited VRAM.
 
 ## How It Works
-1. **Upload** a PDF file through the Streamlit interface
+1. **Upload** a PDF file through the Streamlit interface *(recommended: 10 pages or fewer for best performance)*
 2. **Chunking** — the PDF is split into smaller overlapping text chunks
 3. **Embedding** — each chunk is converted into a vector using `sentence-transformers/all-MiniLM-L6-v2`
 4. **Retrieval** — when you ask a question, the most relevant chunks are retrieved from the in-memory vector store
