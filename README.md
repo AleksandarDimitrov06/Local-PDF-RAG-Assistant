@@ -7,7 +7,8 @@ A Retrieval-Augmented Generation (RAG) application built entirely with open-sour
 - **Custom Context:** Chat with any PDF document using LangChain and Hugging Face embeddings.
 
 ## Hardware Requirements
-- NVIDIA GPU with at least 4GB VRAM (Without a GPU it will fall back to CPU — functional but very slow (5–15 min/query))
+- NVIDIA GPU with at least 4GB VRAM 
+   >**Note:**Without a GPU it will fall back to CPU — functional but very slow (5–15 min/query)
 - 8GB+ System RAM
 - 5-6 GB free storage space for model weights and cache on first download
 
