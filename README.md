@@ -21,7 +21,8 @@ A Retrieval-Augmented Generation (RAG) application built entirely with open-sour
    pip install -r requirements.txt
 4. **Run the model**
     streamlit run app.py
-    > **Note:** Initial startup may take a moment depending on your hardware, as the model loads into memory on first launch.
+
+> **Note:** Initial startup may take a moment depending on your hardware, as the model loads into memory on first launch.
 
 
 ## Tech Stack
