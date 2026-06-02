@@ -1,4 +1,5 @@
 import streamlit as st
+from dotenv import load_dotenv
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndBytesConfig
 from langchain_huggingface import HuggingFacePipeline, HuggingFaceEmbeddings
 from langchain_core.vectorstores import InMemoryVectorStore
@@ -6,7 +7,7 @@ from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-
+load_dotenv()
 
 @st.cache_resource
 def load_llm_and_embeddings():
