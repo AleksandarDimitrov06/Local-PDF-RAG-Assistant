@@ -12,5 +12,5 @@ accelerate
 bitsandbytes
 langchain-text-splitters
 langchain_community
-streamlit
+streamlit==1.57.0
 python-dotenv
